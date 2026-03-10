@@ -1,0 +1,60 @@
+{
+  "run_id": "20251231_165217_a5f12d29",
+  "created_at_unix": 1767167540.857497,
+  "argv": [
+    "benchmark.py",
+    "--gpu",
+    "0",
+    "--model",
+    "AlexNet",
+    "--phase",
+    "train",
+    "--batch-sizes",
+    "1,2,4,8",
+    "--warmup-steps",
+    "30",
+    "--measure-steps",
+    "200",
+    "--out-dir",
+    "workload_dataset",
+    "--data-dir",
+    "/home/taeyoung/data"
+  ],
+  "args": {
+    "gpu": 0,
+    "data_dir": "/home/taeyoung/data",
+    "out_dir": "workload_dataset",
+    "model": "AlexNet",
+    "all_models": false,
+    "batch_sizes": "1,2,4,8",
+    "phase": "train",
+    "amp": false,
+    "warmup_steps": 30,
+    "measure_steps": 200,
+    "num_workers": 2,
+    "pin_memory": true,
+    "download": true,
+    "sample_interval_ms": 20,
+    "seed": 0,
+    "run_id": "",
+    "manifest_name": "manifest.jsonl",
+    "errors_name": "errors.jsonl"
+  },
+  "cuda_visible_devices": "0",
+  "physical_gpu_id": 0,
+  "units": {
+    "runtime_gpu_ms": "ms",
+    "runtime_wall_ms": "ms",
+    "avg_gpu_util": "percent(0-100)",
+    "avg_memctrl_util": "percent(0-100)",
+    "avg_vram_util": "percent(0-100)",
+    "avg_vram_bytes": "bytes",
+    "avg_power": "watt",
+    "energy_sum": "joule",
+    "avg_energy_per_gpu": "joule"
+  },
+  "notes": {
+    "avg_memctrl_util": "NVML utilization.memory (memory controller utilization), NOT VRAM usage ratio",
+    "avg_vram_util": "VRAM used / total ratio derived from NVML memoryInfo"
+  }
+}

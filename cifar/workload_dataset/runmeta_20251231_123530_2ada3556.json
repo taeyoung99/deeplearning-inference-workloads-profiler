@@ -1,0 +1,49 @@
+{
+  "run_id": "20251231_123530_2ada3556",
+  "created_at_unix": 1767152134.6493194,
+  "argv": [
+    "benchmark.py",
+    "--gpus",
+    "0",
+    "--model",
+    "AlexNet",
+    "--phase",
+    "train",
+    "--batch-sizes",
+    "1,2,4,8",
+    "--warmup-steps",
+    "30",
+    "--measure-steps",
+    "200",
+    "--sample-interval-ms",
+    "20",
+    "--data-dir",
+    "/home/taeyoung/data",
+    "--out-dir",
+    "workload_dataset"
+  ],
+  "args": {
+    "gpus": "0",
+    "data_dir": "/home/taeyoung/data",
+    "out_dir": "workload_dataset",
+    "model": "AlexNet",
+    "all_models": false,
+    "batch_sizes": "1,2,4,8",
+    "phase": "train",
+    "amp": false,
+    "warmup_steps": 30,
+    "measure_steps": 200,
+    "num_workers": 2,
+    "pin_memory": true,
+    "download": true,
+    "sample_interval_ms": 20,
+    "seed": 0,
+    "dp": false,
+    "run_id": "",
+    "manifest_name": "manifest.jsonl"
+  },
+  "cuda_visible_devices": "0",
+  "physical_gpu_ids": [
+    0
+  ]
+}
